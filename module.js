@@ -1,7 +1,3 @@
-import emailjs from "https://cdn.emailjs.com/dist/email.min.js";
-
-emailjs.init("Ix_cFCHhOIzE2E9Ew");
-
 document
   .getElementById("contact-form")
   .addEventListener("submit", function (e) {
@@ -12,3 +8,4 @@ document
       .then(() => alert("Mensagem enviada com sucesso!"))
       .catch((error) => alert("Erro ao enviar: " + error));
   });
+

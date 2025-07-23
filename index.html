@@ -10,10 +10,14 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oxanium:wght@200..800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
 </head>
 
 <body>
     <main>
+        <!-- Botão "voltar ao topo" -->
+        <button id="btnTop" onclick="scrollToTop()">↑</button>
+
         <nav id="navbar">
             <div class="portifolio">
                 <h1>Portfólio</h1>
@@ -200,7 +204,8 @@
                             <img src="img/calculadora-imc.png" alt="Imc/Calculator.png">
                         </div>
                         <div class="coment">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <h3>Calculadora IMC</h3>
+                            <p>Landing page simples e funcional para cálculo do IMC (Índice de Massa Corporal). O usuário informa seu peso e altura, e a aplicação retorna o valor do IMC, classificando-o de acordo com as faixas definidas pela OMS (como "peso normal", "sobrepeso", "obesidade", etc.). Projeto desenvolvido com HTML, CSS e JavaScript, com foco em responsividade, design limpo e boa experiência do usuário.</p>
                             <div class="button-link">
                                 <a href="https://gilsonoliveeira.github.io/calculadora-imc/index.html" target="_blank">Visualizar</a>
                             </div>
@@ -212,14 +217,38 @@
                             <img src="img/search-form.png" alt="search-form.png">
                         </div>
                         <div class="coment">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <h3>Formúlario de Satisfação</h3>
+                            <p>Página desenvolvida para coletar feedback dos usuários sobre a experiência com um aplicativo de filmes e séries. O formulário permite avaliar aspectos como usabilidade, design, variedade de conteúdo e satisfação geral. Projeto construído com HTML, CSS e JavaScript, com foco em layout limpo, responsividade e facilidade de uso. Ideal para treinar manipulação de formulários e envio de dados.</p>
                             <div class="button-link">
                                 <a href="https://gilsonoliveeira.github.io/miniprojetos/formularioPesquisa/index.html" target="_blank">Visualizar</a>
                             </div>
                         </div>
-                    </div>
-        
+                    </div>        
                     <div class="project-tile quadro">
+                        <div class="form-search">
+                            <img src="img/pdvPrimos.png" alt="pdvPrimos/png">
+                        </div>
+                        <div class="coment">
+                            <h3>PDV Primos Barbearia</h3>
+                            <p>Página desenvolvida para simular um sistema de ponto de venda (PDV) voltado para barbearias e pequenos comércios. O sistema permite registrar movimentações financeiras (entradas, saídas e vendas), visualizar e fechar o caixa do dia, além de gerenciar o estoque e consultar relatórios simples. Projeto construído com HTML, CSS e JavaScript, com foco em layout responsivo, navegação intuitiva e prática de lógica de interface. Ideal para testes, aprendizado e simulação de um PDV funcional.</p>
+                            <div class="button-link">
+                                <a href="https://gilsonoliveeira.github.io/pdvPrimos/index.html" target="_blank">Visualizar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-tile quadro">
+                        <div class="loginNeon">
+                            <img src="img/loginneon.png" alt="loginNeon/png">
+                        </div>
+                        <div class="coment">
+                            <h3>Login Neon</h3>
+                            <p>Interface de login simples com visual moderno e estilizado em neon. A tela conta com campos de e-mail e senha, botão de acesso e efeito visual vibrante utilizando cores neon, contrastes escuros e sombras. Desenvolvida com HTML, CSS e JavaScript, com foco em estética futurista, responsividade e uma experiência visual atraente. Ideal para treinar estilização com CSS e efeitos visuais.</p>
+                            <div class="button-link">
+                                <a href="https://gilsonoliveeira.github.io/projeto-loginneon/index.html" target="_blank">Visualizar</a>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="project-tile quadro">
                         <div class="landingPage">
                             <img src="img/landingpage.png" alt="landing/page">
                         </div>
@@ -230,24 +259,13 @@
                             </div>
                         </div>
                     </div>
-        
                     <div class="project-tile quadro">
                         <div class="loginNeon">
                             <img src="img/loginneon.png" alt="loginNeon/png">
                         </div>
                         <div class="coment">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <div class="button-link">
-                                <a href="https://gilsonoliveeira.github.io/projeto-loginneon/index.html" target="_blank">Visualizar</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-tile quadro">
-                        <div class="loginNeon">
-                            <img src="img/loginneon.png" alt="loginNeon/png">
-                        </div>
-                        <div class="coment">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <h3>Login Neon</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis enim quibusdam et, laborum voluptatum sint, asperiores nulla earum eligendi quis velit ab quaerat similique quos doloremque adipisci recusandae possimus sapiente!</p>
                             <div class="button-link">
                                 <a href="https://gilsonoliveeira.github.io/projeto-loginneon/index.html" target="_blank">Visualizar</a>
                             </div>
@@ -269,7 +287,6 @@
             <!-- Botões de Navegação -->
             <button class="carousel-btn prev">◄</button>
             <button class="carousel-btn next">►</button>
-            <button class="btn-top"></button>
         </section>
         
         </section>
@@ -299,7 +316,14 @@
         </div>
     </main>
     <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    </script>
+    <script>
+    AOS.init(); // Inicializa a biblioteca
+    </script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+  emailjs.init("Ix_cFCHhOIzE2E9Ew");
     </script>
     <script src="script.js"></script>
     <script type="module" src="module.js"></script>

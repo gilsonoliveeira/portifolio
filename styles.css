@@ -17,6 +17,26 @@ body {
   background: linear-gradient(40deg, #150c2e, #0d1224);
 }
 
+#btnTop {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  padding: 10px 15px;
+  font-size: 20px;
+  background-color: var(--color2);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none; /* Esconde inicialmente */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.3s;
+}
+
+#btnTop:hover {
+  background-color: #555;
+}
+
 #abrir-menu {
   display: none;
   background-color: var(--color1);
@@ -317,7 +337,7 @@ hr {
   height: auto;
   max-width: 100%;
   width: 40vw;
-  margin: 0px 30px 50px 150px;
+  margin: 100px 30px 50px 150px;
 }
 
 .reveal {
@@ -407,6 +427,19 @@ hr {
   max-width: 1300px;
   width: 100%;
   margin-bottom: 200px;
+  
+}
+
+#projects h3 {
+  color: var(--color2);
+  margin-top: 10px;
+}
+
+#projects p {
+  font-size: 1em;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  
 }
 
 .certificate-tile {
@@ -451,7 +484,10 @@ hr {
   min-width: 31.6%; /* Mostra 3 por vez */
   box-sizing: border-box;
   transition: transform 0.3s ease;
+  height: auto;
 }
+
+
 
 .project-tile img {
   width: 100%;
@@ -473,11 +509,11 @@ hr {
 }
 
 .carousel-btn.prev {
-  left: 80px;
+  left: 170px;
 }
 
 .carousel-btn.next {
-  right: 80px;
+  right: 170px;
 }
 
 .carousel-btn:hover {
@@ -495,6 +531,7 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 10px;
 }
 
 .button-link a {

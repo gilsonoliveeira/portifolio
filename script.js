@@ -92,4 +92,22 @@ function updateCarousel() {
     track.style.transform = `translateX(${movePercentage}%)`;
 }
 
+// Mostra ou esconde o botão dependendo do scroll
+window.onscroll = function () {
+  const btn = document.getElementById("btnTop");
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    btn.style.display = "block";
+  } else {
+    btn.style.display = "none";
+  }
+};
+
+// Função para rolar suavemente até o topo
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+
 
