@@ -527,11 +527,16 @@ hr {
   align-items: center;
 }
 
+.coment p {
+  font-size: 1em;
+  height: 250px;
+}
+
 .button-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px;
+  margin: 15px;
 }
 
 .button-link a {
@@ -640,10 +645,24 @@ footer img {
   #navbar {
     margin: 0px 20px;
   }
+  
+  #gif{
+    display: none;
+  }
 
   #navbar a {
     display: none;
   }
+
+  .buttons {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    gap: 20px;
+    
+  }
+
+
 
   #menu-burguer {
     display: flex;
@@ -699,6 +718,7 @@ footer img {
   .container2 {
     display: grid;
     grid-template-columns: 1fr;
+
   }
 
   #skills-wrapper {
