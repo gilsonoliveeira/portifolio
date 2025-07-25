@@ -427,7 +427,6 @@ hr {
   max-width: 1300px;
   width: 100%;
   margin-bottom: 200px;
-  
 }
 
 #projects h3 {
@@ -439,7 +438,6 @@ hr {
   font-size: 1em;
   text-overflow: ellipsis;
   overflow: hidden;
-  
 }
 
 .certificate-tile {
@@ -486,8 +484,6 @@ hr {
   transition: transform 0.3s ease;
   height: auto;
 }
-
-
 
 .project-tile img {
   width: 100%;
@@ -579,12 +575,11 @@ footer {
   color: white;
 }
 
-#title-footer{
+#title-footer {
   font-size: 2.6em;
   margin-bottom: 15px;
   font-family: var(--font2);
 }
-
 
 footer a {
   filter: brightness(1) invert(1);
@@ -598,7 +593,6 @@ footer img {
 .links {
   margin-top: 10px;
   text-align: center;
-
 }
 
 #contact-form {
@@ -629,7 +623,6 @@ footer img {
   background-color: var(--color2);
 }
 
-
 #copy {
   display: block;
   height: 40px;
@@ -645,9 +638,31 @@ footer img {
   #navbar {
     margin: 0px 20px;
   }
-  
-  #gif{
-    display: none;
+
+  .animation-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    width: 100%;
+    height: 300px;
+  }
+
+  #gif {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+}
+
+  #welcome-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100vw;
+    font-size: 2.3rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   #navbar a {
@@ -656,13 +671,9 @@ footer img {
 
   .buttons {
     display: flex;
-    text-align: center;
-    width: 100%;
     gap: 20px;
-    
+    align-items: center;
   }
-
-
 
   #menu-burguer {
     display: flex;
@@ -672,22 +683,9 @@ footer img {
     margin-right: 0;
   }
 
-  #welcome-section {
-    flex-direction: column;
-    text-align: start;
-    margin-top: 2vh;
-    margin: auto;
-    font-size: 2.3rem;
-  }
-
-  #gif {
-    margin: 0 auto;
-    width: 300px;
-    height: 300px;
-  }
-
   .text-container {
     max-width: 100%;
+    height: fit-content;
   }
 
   .text-container p {
@@ -695,6 +693,9 @@ footer img {
   }
 
   .about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
     margin: 0 auto;
   }
@@ -718,7 +719,6 @@ footer img {
   .container2 {
     display: grid;
     grid-template-columns: 1fr;
-
   }
 
   #skills-wrapper {
@@ -728,7 +728,7 @@ footer img {
   }
 
   hr {
-    display: none;
+    display: block;
   }
 
   #skills {
