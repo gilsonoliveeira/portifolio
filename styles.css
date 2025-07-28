@@ -648,21 +648,21 @@ footer img {
   }
 
   #gif {
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 300px;
-  height: 300px;
-}
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+  }
 
   #welcome-section {
     display: grid;
-    grid-template-columns: 1fr;
-    width: 100vw;
+    grid-template-columns: 1fr; /* <<< isso aqui resolve o problema do layout */
+    justify-items: center;
+    width: 100%;
+    margin: 0;
     font-size: 2.3rem;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   #navbar a {
@@ -683,8 +683,17 @@ footer img {
     margin-right: 0;
   }
 
+  #typingEffect {
+    margin-top: 20px;
+  }
+
   .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* <<< centraliza os filhos no mobile */
+    text-align: center; /* <<< centraliza textos e botões */
     max-width: 100%;
+    width: 100%;
     height: fit-content;
   }
 
@@ -712,8 +721,9 @@ footer img {
   }
 
   #container {
-    width: 90%;
-    margin: 10px 20px 20px 10px;
+    display: grid;
+    width: 100%;
+    margin: 10px 10px;
   }
 
   .container2 {
@@ -727,28 +737,22 @@ footer img {
     white-space: nowrap; /* Evita quebra de linha */
   }
 
-  hr {
-    display: block;
-  }
-
-  #skills {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
   #all-skills {
-    animation: mover 5s linear infinite;
+    animation: mover 2s linear infinite;
   }
 
-  #projects,
-  .certificates {
-    margin: 30px 20px 150px 20px;
-    width: 90%;
+  #footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
   }
 
-  .project-tile {
-    display: grid;
-    grid-template-columns: 1fr;
+  #contact-form {
+    display: flex;
+    align-items: center;
+    width: 450px;
   }
 
   .certificate-tile {
