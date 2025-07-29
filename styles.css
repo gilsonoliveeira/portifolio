@@ -12,9 +12,11 @@
   font-family: var(--font1);
   box-sizing: border-box;
 }
-main {
-  width: 1800px;
-  margin: auto;
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -82,6 +84,7 @@ body {
 #navbar {
   display: flex;
   height: 80px;
+  width: auto;
   justify-content: space-between;
   align-items: center;
   gap: 5px;
@@ -124,18 +127,19 @@ body {
 
 #welcome-section {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  margin: 8vw 15vw;
-  font-size: 3.2em;
+  grid-template-columns: minmax(300px, 1fr) minmax(300px, 1fr);
+  align-items: center;
+  gap: 50px;
+  padding: 5vw 8vw 5vw 6vw;
+  font-size: clamp(1.8rem, 2vw + 1rem, 3.2rem); /* responsivo! */
   color: white;
 }
 
 .text-container {
   display: flex;
-  flex-direction: column; /* Empilha os elementos verticalmente */
-  max-width: 70%; /* Garante que os textos não ocupem toda a largura */
-  gap: 15px; /* Espaçamento entre os elementos */
-  height: 400px;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
 }
 
 #gif {
@@ -181,15 +185,21 @@ body {
 
 .myPhoto {
   background-image: url("img/gilson.jpg");
-  background-size: contain;
-  background-position: top center;
-  background-repeat: no-repeat;
-  border: 1px solid transparent;
-  border-radius: 15px;
-  width: 300px;
-  height: 300px;
-  margin-left: 100px;
-  margin-top: 10%;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  max-width: 350px;
+  height: 350px;
+  aspect-ratio: 3 / 4;
+  border-radius: 12px;
+  margin-left: 15px;
+}
+
+.myPhoto img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
 }
 
 .buttons {
@@ -201,7 +211,7 @@ body {
 .buttons.show-buttons {
   opacity: 1;
   visibility: visible;
-  transition: opacity 1s ease; /* Só a opacidade precisa de transição agora */
+  transition: opacity 1s ease;
 }
 
 .contact {
@@ -227,15 +237,18 @@ body {
 
 #container {
   width: 100%;
-  margin-top: 50px;
+  background-color: #0b0c2a; /* se quiser manter o fundo escuro */
+  padding: 60px 20px;
+  box-sizing: border-box;
 }
 
 .container2 {
+  max-width: 1200px;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr; /* 3 colunas, a primeira é a maior */
-  align-items: center; /* Alinha verticalmente ao centro */
-  justify-items: center; /* Alinha horizontalmente ao centro */
-  gap: 10px; /* Espaço entre as colunas (opcional) */
+  grid-template-columns: minmax(600px, 2fr) 1fr 60px; /* texto, foto, placa */
+  gap: 30px;
+  align-items: center;
 }
 
 hr {
@@ -313,16 +326,18 @@ hr {
 }
 
 .about-me {
-  font-family: var(--font2);
-  background-color: var(--color1);
-  padding: 20px;
   color: white;
-  line-height: 2;
-  font-size: 1.1em;
-  height: auto;
-  max-width: 100%;
-  width: 40vw;
-  margin: 100px 30px 50px 150px;
+}
+
+.about-me h1 {
+  color: #f25081;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.about-me p {
+  font-size: 1.2rem;
+  line-height: 1.6;
 }
 
 .reveal {
@@ -334,11 +349,6 @@ hr {
 .reveal.active {
   opacity: 1;
   transform: translateY(0);
-}
-
-.about-me h1 {
-  color: var(--color2);
-  margin-bottom: 20px;
 }
 
 #skills-wrapper {
@@ -443,7 +453,6 @@ hr {
   border-radius: 20px;
 }
 
-
 .project-tile img {
   width: 100%;
   height: 180px;
@@ -508,7 +517,6 @@ footer {
   padding: 2rem;
   background-color: var(--color3);
   color: white;
-  
 }
 
 #title-footer {
@@ -540,9 +548,8 @@ footer img {
   margin: 40px 0px;
 }
 
-.swiper-wrapper{
+.swiper-wrapper {
   font-size: 1.1em;
-  
 }
 
 #contact-form {
@@ -583,37 +590,26 @@ footer img {
 }
 
 @media screen and (max-width: 768px) {
-  /* Estilo para Celulares */
-
-  main {
-    width: 100%;
-  }
-
   #navbar {
     margin: 0px 20px;
   }
 
   .animation-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 0 auto;
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 300px;
+    width: 100%;
   }
 
   #gif {
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 300px;
     height: 300px;
   }
 
   #welcome-section {
     display: grid;
-    grid-template-columns: 1fr; /* <<< isso aqui resolve o problema do layout */
-    justify-items: center;
+    grid-template-columns: 1fr;
     width: 100%;
     margin: 0;
     font-size: 2.3rem;
@@ -679,6 +675,7 @@ footer img {
     display: grid;
     width: 100%;
     text-align: justify;
+    hyphens: auto;
     margin-top: 0;
   }
 
@@ -708,7 +705,8 @@ footer img {
   #contact-form {
     display: flex;
     align-items: center;
-    width: 450px;
+    width: 100%;
+    max-width: 500px;
   }
 
   #projects {
@@ -727,8 +725,6 @@ footer img {
     width: 100%;
     margin: 30px;
   }
-  
-
 
   @media (min-width: 769px) and (max-width: 1023px) {
     /*Estilo para Tablets */
