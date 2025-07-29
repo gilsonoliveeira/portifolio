@@ -1,324 +1,506 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfólio</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oxanium:wght@200..800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
-</head>
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oxanium:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+  </head>
 
-<body>
+  <body>
     <main>
-        <!-- Botão "voltar ao topo" -->
-        <button id="btnTop" onclick="scrollToTop()">↑</button>
+      <!-- Botão "voltar ao topo" -->
+      <button id="btnTop" onclick="scrollToTop()">↑</button>
 
-        <nav id="navbar">
-            <div class="portifolio">
-                <h1>Portfólio</h1>
-            </div>
-            <ul id="lista">
-                <li><a href="#about-me">Sobre Mim</a></li>
-                <li><a href="#skills-wrapper">Skills</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#certificates">Certificados</a></li>
-            </ul>
-            <div id="menu-burguer">
-                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
-                    fill="#D35363">
-                    <path
-                        d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z" />
-                </svg>
-            </div>
-        </nav>
-        <div id="abrir-menu">
-            <!-- Aqui Abre o menu quando eu clicar no menu-burguer-->
+      <nav id="navbar">
+        <div class="portifolio">
+          <h1>Portfólio</h1>
         </div>
-        <section id="welcome-section">
-            <div class="text-container">
-                <h1 id="typingEffect"> </h1>
-                <div id="icons">
-                    <a id="profile-link" target="_blank" href="https://github.com/gilsonoliveeira"><img
-                            src="https://img.icons8.com/?size=100&id=12599&format=png&color=F25081" alt="github.png"
-                            width="40px"></a>
-                    <a href="https://www.facebook.com/GilsonOliiveiira/" target="_blank"><img
-                            src="https://img.icons8.com/?size=100&id=118467&format=png&color=F25081" alt="facebok.png"
-                            width="40px"></a>
-                    <a href="https://www.instagram.com/gilsonoliveeira" target="_blank"><img
-                            src="https://img.icons8.com/?size=100&id=32309&format=png&color=F25081" alt="instagram.png"
-                            width="40px"></a>
-                    <a href="https://wa.me/5532999970772" target="_blank"><img
-                            src="https://img.icons8.com/?size=100&id=16733&format=png&color=F25081" alt="whatsapp.png"
-                            width="40px"></a>
-                </div>
-                <div class="buttons">
-                    <a href="#title-footer" class="contact">Contate-me</a>
-                    <a href="./pdf/Curriculo Gilson da Silva de Oliveira Junior.pdf" download class="contact">Download CV</a>
-                </div>
-            </div>
-            <div class="animation-container">
-                <dotlottie-player src="https://lottie.host/6e13de84-c2e5-492b-9b9f-0be7878b895d/Qf7LwOCeZL.lottie" background="transparent" speed="1" loop autoplay id="gif"></dotlottie-player>
-            </div>
-        </section>
-        </section>
-        <section id="container">
-            <div class="container2">
-                <div data-aos="zoom-in" data-aos-duration="1600" id="about-me" class="about-me">
-                    <h1>Quem eu sou ?</h1>
-                    <p>Sou Técnico em Administração, formado pelo Instituto Federal de Ciência e Tecnologia de MG, e atualmente curso Análise e Desenvolvimento de Sistemas, com foco em programação front-end e desenvolvimento web. Tenho experiência profissional como gerente de hotel, onde atuei por 2,5 anos, desenvolvendo habilidades em gestão, organização e liderança.
-                    Além disso, possuo conhecimentos em montagem e manutenção de computadores, o que reforça minha afinidade com tecnologia e minha capacidade de resolver problemas técnicos.
-                    Sou uma pessoa proativa, organizada e criativa, com um grande interesse em aprender e aplicar novas habilidades. Meu objetivo é concluir minha graduação e construir uma carreira sólida na área de desenvolvimento de sistemas, transformando meu sonho em realidade.
-                    </p>
-                </div>
-                <div class="myPhoto" data-aos="fade-left" data-aos-duration="1900">
-                </div>
-                <div class="placa-container " data-aos="fade-left" data-aos-duration="2200">
-                    <h1 id="title-about">
-                        Sobre mim
-                    </h1>
-                    <div class="linha">
+        <ul id="lista">
+          <li><a href="#about-me">Sobre Mim</a></li>
+          <li><a href="#skills-wrapper">Skills</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#certificates">Certificados</a></li>
+        </ul>
+        <div id="menu-burguer">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="40px"
+            viewBox="0 -960 960 960"
+            width="40px"
+            fill="#D35363"
+          >
+            <path
+              d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"
+            />
+          </svg>
+        </div>
+      </nav>
+      <div id="abrir-menu">
+        <!-- Aqui Abre o menu quando eu clicar no menu-burguer-->
+      </div>
 
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="skills-wrapper">
-            <hr>
-            <div class="title-div">
-                <h2 id="title">Skills</h2>
-            </div>
-            <div id="all-skills">
-                <div class="html">
-                    <img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000" alt="Logo HTML">
-                    <h2 class="title-logo">HTML5</h2>
-                </div>
-                <div class="css">
-                    <img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000" alt="Logo CSS">
-                    <h2 class="title-logo">CSS3</h2>
-                </div>
-                <div class="javascript">
-                    <img src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000" alt="Logo JavaScript">
-                    <h2 class="title-logo">JavaScript</h2>
-                </div>
-                <div class="python">
-                    <img src="https://img.icons8.com/?size=100&id=l75OEUJkPAk4&format=png&color=000000"
-                        alt="Logo Python">
-                    <h2 class="title-logo">Python</h2>
-                </div>
-                <div class="react">
-                    <img src="https://img.icons8.com/?size=100&id=asWSSTBrDlTW&format=png&color=000000"
-                        alt="Logo React">
-                    <h2 class="title-logo">React</h2>
-                </div>
-                <div class="html">
-                    <img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000" alt="Logo HTML">
-                    <h2 class="title-logo">HTML5</h2>
-                </div>
-                <div class="css">
-                    <img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000" alt="Logo CSS">
-                    <h2 class="title-logo">CSS3</h2>
-                </div>
-                <div class="javascript">
-                    <img src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000" alt="Logo JavaScript">
-                    <h2 class="title-logo">JavaScript</h2>
-                </div>
-                <div class="python">
-                    <img src="https://img.icons8.com/?size=100&id=l75OEUJkPAk4&format=png&color=000000"
-                        alt="Logo Python">
-                    <h2 class="title-logo">Python</h2>
-                </div>
-                <div class="react">
-                    <img src="https://img.icons8.com/?size=100&id=asWSSTBrDlTW&format=png&color=000000"
-                        alt="Logo React">
-                    <h2 class="title-logo">React</h2>
-                </div>
-                <div class="html">
-                    <img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000" alt="Logo HTML">
-                    <h2 class="title-logo">HTML5</h2>
-                </div>
-                <div class="css">
-                    <img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000" alt="Logo CSS">
-                    <h2 class="title-logo">CSS3</h2>
-                </div>
-                <div class="javascript">
-                    <img src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000" alt="Logo JavaScript">
-                    <h2 class="title-logo">JavaScript</h2>
-                </div>
-                <div class="python">
-                    <img src="https://img.icons8.com/?size=100&id=l75OEUJkPAk4&format=png&color=000000"
-                        alt="Logo Python">
-                    <h2 class="title-logo">Python</h2>
-                </div>
-                <div class="react">
-                    <img src="https://img.icons8.com/?size=100&id=asWSSTBrDlTW&format=png&color=000000"
-                        alt="Logo React">
-                    <h2 class="title-logo">React</h2>
-                </div>
-            </div>
-            </div>
-        </section>
-        <hr>
+      <!-- Welcome Section -->
+      <section id="welcome-section">
+        <div class="text-container">
+          <h1 id="typingEffect"></h1>
+          <div id="icons">
+            <a
+              id="profile-link"
+              target="_blank"
+              href="https://github.com/gilsonoliveeira"
+              ><img
+                src="https://img.icons8.com/?size=100&id=12599&format=png&color=F25081"
+                alt="github.png"
+                width="40px"
+            /></a>
+            <a href="https://www.facebook.com/GilsonOliiveiira/" target="_blank"
+              ><img
+                src="https://img.icons8.com/?size=100&id=118467&format=png&color=F25081"
+                alt="facebok.png"
+                width="40px"
+            /></a>
+            <a href="https://www.instagram.com/gilsonoliveeira" target="_blank"
+              ><img
+                src="https://img.icons8.com/?size=100&id=32309&format=png&color=F25081"
+                alt="instagram.png"
+                width="40px"
+            /></a>
+            <a href="https://wa.me/5532999970772" target="_blank"
+              ><img
+                src="https://img.icons8.com/?size=100&id=16733&format=png&color=F25081"
+                alt="whatsapp.png"
+                width="40px"
+            /></a>
+          </div>
+          <div class="buttons">
+            <a href="#title-footer" class="contact">Contate-me</a>
+            <a
+              href="./pdf/Curriculo Gilson da Silva de Oliveira Junior.pdf"
+              download
+              class="contact"
+              >Download CV</a
+            >
+          </div>
+        </div>
+        <div class="animation-container">
+          <dotlottie-player
+            src="https://lottie.host/6e13de84-c2e5-492b-9b9f-0be7878b895d/Qf7LwOCeZL.lottie"
+            background="transparent"
+            speed="1"
+            loop
+            autoplay
+            id="gif"
+          ></dotlottie-player>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="container">
+        <div class="container2">
+          <div
+            data-aos="zoom-in"
+            data-aos-duration="1600"
+            id="about-me"
+            class="about-me"
+          >
+            <h1>Quem eu sou ?</h1>
+            <p>
+              Sou Técnico em Administração, formado pelo Instituto Federal de
+              Ciência e Tecnologia de MG, e atualmente curso Análise e
+              Desenvolvimento de Sistemas, com foco em programação front-end e
+              desenvolvimento web. Tenho experiência profissional como gerente
+              de hotel, onde atuei por 2,5 anos, desenvolvendo habilidades em
+              gestão, organização e liderança. Além disso, possuo conhecimentos
+              em montagem e manutenção de computadores, o que reforça minha
+              afinidade com tecnologia e minha capacidade de resolver problemas
+              técnicos. Sou uma pessoa proativa, organizada e criativa, com um
+              grande interesse em aprender e aplicar novas habilidades. Meu
+              objetivo é concluir minha graduação e construir uma carreira
+              sólida na área de desenvolvimento de sistemas, transformando meu
+              sonho em realidade.
+            </p>
+          </div>
+          <div
+            class="myPhoto"
+            data-aos="fade-left"
+            data-aos-duration="1900"
+          ></div>
+          <div
+            class="placa-container"
+            data-aos="fade-left"
+            data-aos-duration="2200"
+          >
+            <h1 id="title-about">Sobre mim</h1>
+            <div class="linha"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills-wrapper">
+        <hr />
         <div class="title-div">
-            <h2 id="title">Certificados</h2>
+          <h2 id="title">Skills</h2>
         </div>
-        <section class="certificates" id="certificates">
-            <div class="certificate-tile">
-                <div class="certificado certificado1">
-                    <a href="img/certificados/Algoritmos e logica de programação- Udemy.jpg"><img
-                            src="img/certificados/Algoritmos e logica de programação- Udemy.jpg"
-                            alt="Algoritimos e lógica de programação"></a>
-                </div>
-                <div class="certificado certificado2">
-                    <a href="img/certificados/Html e Css responsivo - FreeCodeCamp.png"><img
-                            src="img/certificados/Html e Css responsivo - FreeCodeCamp.png"
-                            alt="HTML e CSS Responsivo"></a>
+        <div id="all-skills">
+          <div class="html">
+            <img
+              src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000"
+              alt="Logo HTML"
+            />
+            <h2 class="title-logo">HTML5</h2>
+          </div>
+          <div class="css">
+            <img
+              src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000"
+              alt="Logo CSS"
+            />
+            <h2 class="title-logo">CSS3</h2>
+          </div>
+          <div class="javascript">
+            <img
+              src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000"
+              alt="Logo JavaScript"
+            />
+            <h2 class="title-logo">JavaScript</h2>
+          </div>
+          <div class="python">
+            <img
+              src="https://img.icons8.com/?size=100&id=l75OEUJkPAk4&format=png&color=000000"
+              alt="Logo Python"
+            />
+            <h2 class="title-logo">Python</h2>
+          </div>
+          <div class="react">
+            <img
+              src="https://img.icons8.com/?size=100&id=asWSSTBrDlTW&format=png&color=000000"
+              alt="Logo React"
+            />
+            <h2 class="title-logo">React</h2>
+          </div>
+        </div>
+      </section>
 
-                </div>
-                <div class="certificado certificado3">
-                    <a href="img/certificados/Imersão Alura 2025.jpg.png"><img
-                            src="img/certificados/Imersão Alura 2025.jpg.png" alt="Imersão Alura 2025"></a>
+      <hr />
 
-                </div>
-                <div class="certificado certificado4">
-                    <a href="img/certificados/RocketSeat Nlw 2025.png"><img
-                            src="img/certificados/RocketSeat Nlw 2025.png" alt="RocketSeat NLW 2025"></a>
-                </div>
-                <div class="certificado certificado5">
-                    <a href="img/certificados/Faculdade.png"><img src="img/certificados/Faculdade.png"
-                            alt="Analise e Dev de Sistemas Certificado"></a>
-                </div>
-            </div>
-        </section>
-        <hr>
-        <div class="title-div">
-            <h2 id="title">Projetos</h2>
+      <!-- Certificates Section -->
+      <div class="title-div">
+        <h2 id="title">Certificados</h2>
+      </div>
+      <section class="certificates" id="certificates">
+        <div class="certificate-tile">
+          <div class="certificado certificado1">
+            <a
+              href="img/certificados/Algoritmos e logica de programação- Udemy.jpg"
+              ><img
+                src="img/certificados/Algoritmos e logica de programação- Udemy.jpg"
+                alt="Algoritimos e lógica de programação"
+            /></a>
+          </div>
+          <div class="certificado certificado2">
+            <a href="img/certificados/Html e Css responsivo - FreeCodeCamp.png"
+              ><img
+                src="img/certificados/Html e Css responsivo - FreeCodeCamp.png"
+                alt="HTML e CSS Responsivo"
+            /></a>
+          </div>
+          <div class="certificado certificado3">
+            <a href="img/certificados/Imersão Alura 2025.jpg.png"
+              ><img
+                src="img/certificados/Imersão Alura 2025.jpg.png"
+                alt="Imersão Alura 2025"
+            /></a>
+          </div>
+          <div class="certificado certificado4">
+            <a href="img/certificados/RocketSeat Nlw 2025.png"
+              ><img
+                src="img/certificados/RocketSeat Nlw 2025.png"
+                alt="RocketSeat NLW 2025"
+            /></a>
+          </div>
+          <div class="certificado certificado5">
+            <a href="img/certificados/Faculdade.png"
+              ><img
+                src="img/certificados/Faculdade.png"
+                alt="Analise e Dev de Sistemas Certificado"
+            /></a>
+          </div>
         </div>
-        <section id="projects">
-            <div class="carousel-container">
-                <div class="carousel-track">
-                    <div class="project-tile quadro">
-                        <div class="imcCalculator">
-                            <img src="img/calculadora-imc.png" alt="Imc/Calculator.png">
-                        </div>
-                        <div class="coment">
-                            <h3>Calculadora IMC</h3>
-                            <p>Landing page simples e funcional para cálculo do IMC (Índice de Massa Corporal). O usuário informa seu peso e altura, e a aplicação retorna o valor do IMC, classificando-o de acordo com as faixas definidas pela OMS (como "peso normal", "sobrepeso", "obesidade", etc.). Projeto desenvolvido com HTML, CSS e JavaScript, com foco em responsividade, design limpo e boa experiência do usuário.</p>
-                            <div class="button-link">
-                                <a href="https://gilsonoliveeira.github.io/calculadora-imc/index.html" target="_blank">Visualizar</a>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="project-tile quadro">
-                        <div class="form-search">
-                            <img src="img/search-form.png" alt="search-form.png">
-                        </div>
-                        <div class="coment">
-                            <h3>Formúlario de Satisfação</h3>
-                            <p>Página desenvolvida para coletar feedback dos usuários sobre a experiência com um aplicativo de filmes e séries. O formulário permite avaliar aspectos como usabilidade, design, variedade de conteúdo e satisfação geral. Projeto construído com HTML, CSS e JavaScript, com foco em layout limpo, responsividade e facilidade de uso. Ideal para treinar manipulação de formulários e envio de dados.</p>
-                            <div class="button-link">
-                                <a href="https://gilsonoliveeira.github.io/miniprojetos/formularioPesquisa/index.html" target="_blank">Visualizar</a>
-                            </div>
-                        </div>
-                    </div>        
-                    <div class="project-tile quadro">
-                        <div class="form-search">
-                            <img src="img/pdvPrimos.png" alt="pdvPrimos/png">
-                        </div>
-                        <div class="coment">
-                            <h3>PDV Primos Barbearia</h3>
-                            <p>Página que simula um sistema de ponto de venda (PDV) para barbearias e pequenos comércios. Permite registrar entradas, saídas e vendas, fechar o caixa do dia, gerenciar o estoque e consultar relatórios simples. Projeto feito com HTML, CSS e JavaScript, com foco em layout responsivo, navegação intuitiva e prática de lógica de interface.</p>
-                            <div class="button-link">
-                                <a href="https://gilsonoliveeira.github.io/pdvPrimos/index.html" target="_blank">Visualizar</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-tile quadro">
-                        <div class="loginNeon">
-                            <img src="img/loginneon.png" alt="loginNeon/png">
-                        </div>
-                        <div class="coment">
-                            <h3>Login Neon</h3>
-                            <p>Interface de login simples com visual moderno e estilizado em neon. A tela conta com campos de e-mail e senha, botão de acesso e efeito visual vibrante utilizando cores neon, contrastes escuros e sombras. Desenvolvida com HTML, CSS e JavaScript, com foco em estética futurista, responsividade e uma experiência visual atraente. Ideal para treinar estilização com CSS e efeitos visuais.</p>
-                            <div class="button-link">
-                                <a href="https://gilsonoliveeira.github.io/projeto-loginneon/index.html" target="_blank">Visualizar</a>
-                            </div>
-                        </div>
-                    </div>
-                        <div class="project-tile quadro">
-                        <div class="temperatura">
-                            <img src="img/temperatura.png" alt="landing/page">
-                        </div>
-                        <div class="coment">
-                            <h3>Previsão do Tempo</h3>
-                            <p>Aplicativo simples e funcional que consome a API da OpenWeatherMap para exibir a previsão do tempo em tempo real. O usuário digita o nome da cidade e recebe informações como temperatura, vento e condição do céu. Projeto desenvolvido com HTML, CSS e JavaScript, com foco em consumo de API, responsividade e boa experiência do usuário.</p>
-                            <div class="button-link">
-                                <a href="https://gilsonoliveeira.github.io/miniprojetos/temperatura/index.html" target="_blank">Visualizar</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-tile quadro">
-                        <div class="spotify">
-                            <img src="img/spotify.png" alt="loginNeon/png">
-                        </div>
-                        <div class="coment">
-                            <h3>Projeto Spotify</h3>
-                            <p>Projeto que recria a interface do Spotify com foco em design e responsividade. A página apresenta layout moderno, player fixo na parte inferior, barra lateral com navegação e seção principal com playlists e destaques. Desenvolvido com HTML, CSS e JavaScript, ideal para treinar posicionamento de elementos, organização em grid/flexbox e estilização inspirada em aplicações reais.
-                            <div class="button-link">
-                                <a href="https://gilsonoliveeira.github.io/projeto-spotify/index.html" target="_blank">Visualizar</a>
-                            </div>
-                        </div>
-                    </div>
+      </section>
+
+      <hr />
+
+      <!-- Projects Section -->
+      <div class="title-div">
+        <h2 id="title">Projetos</h2>
+      </div>
+      <section id="projects">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <!-- cada projeto fica em uma swiper-slide -->
+            <div class="swiper-slide project-tile quadro">
+              <div class="imcCalculator">
+                <img src="img/calculadora-imc.png" alt="Imc/Calculator.png" />
+              </div>
+              <div class="coment">
+                <h3>Calculadora IMC</h3>
+                <p>
+                  Landing page simples e funcional para cálculo do IMC (Índice
+                  de Massa Corporal). O usuário informa seu peso e altura, e a
+                  aplicação retorna o valor do IMC, classificando-o de acordo
+                  com as faixas definidas pela OMS (como "peso normal",
+                  "sobrepeso", "obesidade", etc.). Projeto desenvolvido com
+                  HTML, CSS e JavaScript, com foco em responsividade, design
+                  limpo e boa experiência do usuário.
+                </p>
+                <div class="button-link">
+                  <a
+                    href="https://gilsonoliveeira.github.io/calculadora-imc/index.html"
+                    target="_blank"
+                    >Visualizar</a
+                  >
                 </div>
+              </div>
             </div>
-            <!-- Botões de Navegação -->
-            <button class="carousel-btn prev">◄</button>
-            <button class="carousel-btn next">►</button>
-        </section>
-        
-        </section>
-        </section>
-        <footer id="footer">
-            <div class="links">
-                <h3 id="title-footer">Contate-me</h3>
-                <a id="profile-link" target="_blank" href="https://github.com/gilsonoliveeira"><img src="img/github.png"
-                        alt="github.png" width="30px"></a>
-                <a href="https://www.facebook.com/GilsonOliiveiira/" target="_blank"><img src="img/facebook-app-symbol.png"
-                        alt="facebok.png" width="30px"></a>
-                <a href="https://www.instagram.com/gilsonoliveeira" target="_blank"><img src="img/instagram (1).png"
-                        alt="instagram.png" width="30px"></a>
-                <a href="https://wa.me/5532999970772" target="_blank"><img src="img/whatsapp.png" alt="whatsapp.png"
-                        width="30px"></a>
-                <a href="https://www.linkedin.com/in/gilson-oliveira-287424343/" target="_blank"><img src="img/linkedin.png" alt="linkedin.png" width="30px"></a>        
+            <!-- Repita o mesmo para cada projeto, só duplicar a div swiper-slide com o conteúdo -->
+            <div class="swiper-slide project-tile quadro">
+              <div class="form-search">
+                <img src="img/search-form.png" alt="search-form.png" />
+              </div>
+              <div class="coment">
+                <h3>Formúlario de Satisfação</h3>
+                <p>
+                  Página desenvolvida para coletar feedback dos usuários sobre a
+                  experiência com um aplicativo de filmes e séries. O formulário
+                  permite avaliar aspectos como usabilidade, design, variedade
+                  de conteúdo e satisfação geral. Projeto construído com HTML,
+                  CSS e JavaScript, com foco em layout limpo, responsividade e
+                  facilidade de uso. Ideal para treinar manipulação de
+                  formulários e envio de dados.
+                </p>
+                <div class="button-link">
+                  <a
+                    href="https://gilsonoliveeira.github.io/miniprojetos/formularioPesquisa/index.html"
+                    target="_blank"
+                    >Visualizar</a
+                  >
+                </div>
+              </div>
             </div>
-            <form id="contact-form">
-                <input type="text" name="from_name" placeholder="Seu nome" required />
-                <input type="email" name="reply_to" placeholder="Seu email" required />
-                <textarea name="message" placeholder="Sua mensagem" required></textarea>
-                <button type="submit">Enviar</button>
-            </form> 
-        </footer>
-        <div id="copy">
-            <p>Copyright ©2025 - Design by <strong>Gilson Oliveira</strong> </p>
+            <div class="swiper-slide project-tile quadro">
+              <div class="imcCalculator">
+                <img src="img/pdvPrimos.png" alt="PDVPRIMOS.png" />
+              </div>
+              <div class="coment">
+                <h3>PDV Primos Barbearia</h3>
+                <p>
+                  Página que simula um sistema de ponto de venda (PDV) para
+                  barbearias e pequenos comércios. Permite registrar entradas,
+                  saídas e vendas, fechar o caixa do dia, gerenciar o estoque e
+                  consultar relatórios simples. Projeto feito com HTML, CSS e
+                  JavaScript, com foco em layout responsivo, navegação intuitiva
+                  e prática de lógica de interface.
+                </p>
+                <div class="button-link">
+                  <a
+                    href="https://gilsonoliveeira.github.io/pdvPrimos/index.html"
+                    target="_blank"
+                    >Visualizar</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide project-tile quadro">
+              <div class="imcCalculator">
+                <img src="img/loginneon.png" alt="loginNeon.png" />
+              </div>
+              <div class="coment">
+                <h3>Login Neon</h3>
+                <p>
+                  Interface de login simples com visual moderno e estilizado em
+                  neon. A tela conta com campos de e-mail e senha, botão de
+                  acesso e efeito visual vibrante utilizando cores neon,
+                  contrastes escuros e sombras. Desenvolvida com HTML, CSS e
+                  JavaScript, com foco em estética futurista, responsividade e
+                  uma experiência visual atraente. Ideal para treinar
+                  estilização com CSS e efeitos visuais
+                </p>
+                <div class="button-link">
+                  <a
+                    href="https://gilsonoliveeira.github.io/projeto-loginneon/index.html"
+                    target="_blank"
+                    >Visualizar</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide project-tile quadro">
+              <div class="imcCalculator">
+                <img src="img/temperatura.png" alt="temperatura.png" />
+              </div>
+              <div class="coment">
+                <h3>Previsão do Tempo</h3>
+                <p>
+                  Aplicativo simples e funcional que consome a API da
+                  OpenWeatherMap para exibir a previsão do tempo em tempo real.
+                  O usuário digita o nome da cidade e recebe informações como
+                  temperatura, vento e condição do céu. Projeto desenvolvido com
+                  HTML, CSS e JavaScript, com foco em consumo de API,
+                  responsividade e boa experiência do usuário.<
+                </p>
+                <div class="button-link">
+                  <a
+                    href="https://gilsonoliveeira.github.io/miniprojetos/temperatura/index.html"
+                    target="_blank"
+                    >Visualizar</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide project-tile quadro">
+              <div class="imcCalculator">
+                <img src="img/spotify.png" alt="spotify.png" />
+              </div>
+              <div class="coment">
+                <h3>Projeto Spotify</h3>
+                <p>
+                  Projeto que recria a interface do Spotify com foco em design e
+                  responsividade. A página apresenta layout moderno, player fixo
+                  na parte inferior, barra lateral com navegação e seção
+                  principal com playlists e destaques. Desenvolvido com HTML,
+                  CSS e JavaScript, ideal para treinar posicionamento de
+                  elementos, organização em grid/flexbox e estilização inspirada
+                  em aplicações reais.
+                </p>
+                <div class="button-link">
+                  <a
+                    href="https://gilsonoliveeira.github.io/projeto-spotify/index.html"
+                    target="_blank"
+                    >Visualizar</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Paginação (bolinhas) opcional -->
+          <div class="swiper-pagination"></div>
         </div>
+      </section>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <div class="links">
+          <h3 id="title-footer">Contate-me</h3>
+          <a
+            id="profile-link"
+            target="_blank"
+            href="https://github.com/gilsonoliveeira"
+            ><img src="img/github.png" alt="github.png" width="30px"
+          /></a>
+          <a href="https://www.facebook.com/GilsonOliiveiira/" target="_blank"
+            ><img
+              src="img/facebook-app-symbol.png"
+              alt="facebok.png"
+              width="30px"
+          /></a>
+          <a href="https://www.instagram.com/gilsonoliveeira" target="_blank"
+            ><img src="img/instagram (1).png" alt="instagram.png" width="30px"
+          /></a>
+          <a href="https://wa.me/5532999970772" target="_blank"
+            ><img src="img/whatsapp.png" alt="whatsapp.png" width="30px"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/gilson-oliveira-287424343/"
+            target="_blank"
+            ><img src="img/linkedin.png" alt="linkedin.png" width="30px"
+          /></a>
+        </div>
+        <form id="contact-form">
+          <input type="text" name="from_name" placeholder="Seu nome" required />
+          <input
+            type="email"
+            name="reply_to"
+            placeholder="Seu email"
+            required
+          />
+          <textarea
+            name="message"
+            placeholder="Sua mensagem"
+            required
+          ></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </footer>
+
+      <div id="copy">
+        <p>Copyright ©2025 - Design by <strong>Gilson Oliveira</strong></p>
+      </div>
     </main>
-    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+
+    <!-- Scripts -->
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    </script>
     <script>
-    AOS.init(); // Inicializa a biblioteca
+      AOS.init(); // Inicializa a biblioteca
     </script>
-    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.emailjs.com/dist/email.min.js"
+    ></script>
     <script>
-  emailjs.init("Ix_cFCHhOIzE2E9Ew");
+      emailjs.init("Ix_cFCHhOIzE2E9Ew");
     </script>
     <script src="script.js"></script>
     <script type="module" src="module.js"></script>
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          // quando a largura da tela for >= 768px, mostre 2 slides
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          // quando a largura da tela for >= 1024px, mostre 3 slides
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+        },
+      });
+    </script>
+  </body>
 </html>

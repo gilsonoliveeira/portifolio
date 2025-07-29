@@ -262,7 +262,7 @@ hr {
     #1a1443 50%,
     transparent 100%
   );
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 #title {
@@ -467,17 +467,6 @@ hr {
   border-radius: 20px;
 }
 
-.carousel-container {
-  overflow: hidden;
-  width: 80%;
-  position: relative;
-}
-
-.carousel-track {
-  display: flex;
-  transition: transform 0.5s ease;
-}
-
 .project-tile {
   min-width: 31.6%; /* Mostra 3 por vez */
   box-sizing: border-box;
@@ -490,30 +479,6 @@ hr {
   height: 180px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.carousel-btn {
-  position: absolute;
-  transform: translateY(-50%);
-  background-color: var(--color3);
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  z-index: 10;
-  border-radius: 50%;
-}
-
-.carousel-btn.prev {
-  left: 170px;
-}
-
-.carousel-btn.next {
-  right: 170px;
-}
-
-.carousel-btn:hover {
-  background-color: var(--color2);
 }
 
 .coment {
@@ -723,7 +688,8 @@ footer img {
   #container {
     display: grid;
     width: 100%;
-    margin: 10px 10px;
+    text-align: justify;
+    margin-top: 0;
   }
 
   .container2 {
@@ -738,7 +704,7 @@ footer img {
   }
 
   #all-skills {
-    animation: mover 2s linear infinite;
+    animation: mover 4s linear infinite;
   }
 
   #footer {
@@ -755,43 +721,64 @@ footer img {
     width: 450px;
   }
 
-  .certificate-tile {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1023px) {
-  /*Estilo para Tablets */
-  #welcome-section {
-    width: 90%;
-    margin: 280px 80px;
-    font-size: 2.5em;
-  }
-
-  #container {
-    width: 80%;
-    margin: auto;
-  }
-
-  #skills {
-    width: 500px;
-    margin: 200px auto;
-  }
-
-  .all-skills {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  #btnTop {
+    display: none !important; /* sobrescrevendo o javascript */
   }
 
   #projects {
-    margin-left: 20px;
-    margin-right: 20px;
-    width: 900px;
-    margin: 20px auto 200px auto;
+    margin-bottom: 30px;
   }
 
-  .project-tile {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  .certificates {
+    margin-bottom: 50px;
+  }
+
+  .certificate-tile {
+    grid-template-columns: 1fr;
+  }
+
+  .swiper {
+    width: 100%;
+    margin: 30px;
+  }
+
+  .swiper-slide {
+    margin: 40px 0px;
+  }
+
+  @media (min-width: 769px) and (max-width: 1023px) {
+    /*Estilo para Tablets */
+    #welcome-section {
+      width: 90%;
+      margin: 280px 80px;
+      font-size: 2.5em;
+    }
+
+    #container {
+      width: 80%;
+      margin: auto;
+    }
+
+    #skills {
+      width: 500px;
+      margin: 200px auto;
+    }
+
+    .all-skills {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    #projects {
+      margin-left: 20px;
+      margin-right: 20px;
+      width: 900px;
+      margin: 20px auto 200px auto;
+    }
+
+    .project-tile {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
   }
 }
