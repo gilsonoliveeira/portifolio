@@ -681,7 +681,7 @@ footer img {
   padding: 15px;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   #navbar {
     padding: 20px;
   }
@@ -853,11 +853,30 @@ footer img {
   }
 }
 
+/* TABLET (portrait e landscape) - 769px até 1023px */
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+  
+  .container2 {
+    width: 95%;
+    max-width: none; /* garante que não herda o desktop */
+  }
 
-/* Telas de Notebook */
-@media (min-width: 1024px) and (max-width: 1920px) { 
+  .container2 h1 {
+    margin: 15px 0;
+  }
+
+  .certificate-tile {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #projects {
+    width: 90%;
+  }
+}
+
+/* NOTEBOOK e DESKTOP - a partir de 1024px */
+@media screen and (min-width: 1280px) {
   .container2 {
     max-width: 1300px;
   }
-  
 }
