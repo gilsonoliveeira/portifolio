@@ -90,7 +90,7 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 5px;
-  padding: 0 15vw;
+  padding: 0 5vw;
 }
 
 #navbar a {
@@ -199,15 +199,14 @@ body {
 }
 
 #icons {
-  display: none; 
+  display: none;
   align-items: center;
   justify-content: start;
   gap: 30px;
-  padding: 15px 0; 
-  margin: 0; 
+  padding: 15px 0;
+  margin: 0;
   width: fit-content;
-  height: fit-content; 
-
+  height: fit-content;
 }
 #icons img {
   width: 50px;
@@ -310,7 +309,7 @@ body {
 }
 
 .text-focus-in {
-	animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
 @keyframes text-focus-in {
@@ -492,7 +491,7 @@ hr {
   }
 }
 
-#projects{
+#projects {
   text-align: justify;
   hyphens: auto;
 }
@@ -687,10 +686,9 @@ footer img {
     padding: 20px;
   }
 
-  #btnTop{
+  #btnTop {
     right: 0;
     padding: 5px 10px;
-
   }
 
   .animation-container {
@@ -853,40 +851,12 @@ footer img {
     padding: 10px;
     width: 100%;
   }
+}
 
-  @media (min-width: 769px) and (max-width: 1023px) {
-    /*Estilo para Tablets */
-    #welcome-section {
-      width: 90%;
-      margin: 280px 80px;
-      font-size: 2.5em;
-    }
 
-    #container {
-      width: 80%;
-      margin: auto;
-    }
-
-    #skills {
-      width: 500px;
-      margin: 200px auto;
-    }
-
-    .all-skills {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
-
-    #projects {
-      margin-left: 20px;
-      margin-right: 20px;
-      width: 900px;
-      margin: 20px auto 200px auto;
-    }
-
-    .project-tile {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
+/* Telas de Notebook */
+@media (min-width: 1024px) and (max-width: 1920px) { 
+  .container2 {
+    max-width: 1300px;
   }
 }
